@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+/**CSS For Header**/
+header{
+  margin-top:0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 22px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+header div{
+  display: flex;
+  gap: 15px;
+}
+body{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.profile-img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+svg{
+  fill: white;
+  color: white;
+    width: 24px;
+  height: 24px;
+
+}
+
+
+/** End Of CSS For Header**/
+
+
+/**CSS For Main**/
+.google{
+  width: 375px;
+  background: fixed;
+}
+main{
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding-top: 10px;
+}
+
+.inputDiv{
+  margin-top: 20px;
+  display: flex;
+  width: 574.4px;
+  flex-shrink: 1;
+  height: 50px;
+  border-radius: 25px;
+  align-items: center;
+  padding-left:12px ;
+  padding-right: 10px;
+  background-color: rgba(138, 138, 138, 0.401);
+  border:none;
+  gap: 16px;
+}
+
+.inputDiv svg{
+  text-align: center;
+  width: 24px;
+  fill: rgba(188, 188, 188, 0.962);
+}
+.inputDiv input{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  color: white;
+  background:transparent;
+  border: none;
+}
+
+.btn-div{
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+
+}
+
+.btn1, .btn2{
+  background-color:rgb(50,50,50);
+  color: white;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Google Sans Flex",Arial,sans-serif;
+}
+
+.christmas-update{
+  margin-top: 50px;
+  font-size: 13px;
+  color: rgb(153, 195, 255);
+}
+.christmas-update a{
+  font-size: 13px;
+  height: 15.2px;
+  color: rgb(153, 195, 255);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.language-google{
+  margin-top: 20px;
+  font-size: 13px;
+  color: lightgray;
+  
+}
+.language-google a{
+  color: rgb(153, 195, 255);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+/* =======================================
+   GOOGLE.COM – TRUE MOBILE VIEW CLONE
+   ======================================= */
+@media (max-width: 600px) {
+
+  body {
+    background-color: rgb(31, 31, 31);
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+  }
+
+  header {
+    padding: 10px 12px;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 12px;
+  }
+
+  header div {
+    gap: 12px;
+  }
+
+  .profile-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* ---- GOOGLE LOGO ---- */
+  .google {
+    width: 350px;       /* Same size as google.com mobile */
+    margin-top: 60px;
+  }
+
+  /* ---- MAIN SECTION ---- */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  /* ---- SEARCH BAR ---- */
+  .inputDiv {
+    width: 92%;
+    max-width: 560px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #303134;  /* Google mobile dark theme */
+    padding-left: 14px;
+    padding-right: 14px;
+    gap: 14px;
+    margin-top: 25px;
+  }
+
+  .inputDiv svg {
+    width: 22px;
+    height: 22px;
+    fill: #9aa0a6;     /* Google’s actual gray */
+  }
+
+  .inputDiv input {
+    font-size: 16px;
+  }
+
+  /* ---- BUTTONS (stay side-by-side!) ---- */
+  .btn-div {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* ---- CHRISTMAS UPDATE ---- */
+  .christmas-update {
+    margin-top: 45px;
+    font-size: 12px;
+    text-align: center;
+    
+    line-height: 1.4;
+  }
+
+  /* ---- LANGUAGE LINKS ---- */
+  .language-google {
+    margin-top: 22px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .language-google a {
+    font-size: 12px;
+  }
+}
