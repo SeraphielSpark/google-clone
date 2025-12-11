@@ -1,5 +1,4 @@
 import sampleImage from "../assets/sample.jpg";
-import ai_icon from "../assets/al-icon.png";
 
 function Header() {
   return (
